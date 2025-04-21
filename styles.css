@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2b2d42;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffcc00;
+}
+
+/* Content Section */
+.content {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2b2d42;
+  text-align: center;
+}
+.apply-button{
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Styling */
+.find-button ,.email-button{
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-content: center;
+  display: block; /* Ensures the button takes up a full line */
+  width: 200px; /* Fixed width */
+  margin-left: auto;
+  margin-right: auto; /* Centers the button */
+}
+
+.find-button:hover {
+  background-color: #ffcc00;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #2b2d42;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Responsive Layout for Job Listings */
+@media (max-width: 768px) {
+  .job-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}
